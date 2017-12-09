@@ -52,7 +52,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /************************************************************************/
 /******/ ([
 /* 0 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
 	
@@ -110,6 +110,10 @@ return /******/ (function(modules) { // webpackBootstrap
 	      // async load of remote UMD component
 	      (0, _scriptjs2.default)(this.props.url, function () {
 	        var target = window[_this2.props.name];
+	        if (target.__esModule) {
+	          target = target.default;
+	        }
+	
 	        if (target) {
 	          // loaded OK
 	          _this2.setState({
@@ -153,9 +157,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	exports.default = LoadUmd;
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
-/***/ },
+/***/ }),
 /* 1 */
-/***/ function(module, exports) {
+/***/ (function(module, exports) {
 
 	// shim for using process in browser
 	var process = module.exports = {};
@@ -327,6 +331,10 @@ return /******/ (function(modules) { // webpackBootstrap
 	process.removeListener = noop;
 	process.removeAllListeners = noop;
 	process.emit = noop;
+	process.prependListener = noop;
+	process.prependOnceListener = noop;
+	
+	process.listeners = function (name) { return [] }
 	
 	process.binding = function (name) {
 	    throw new Error('process.binding is not supported');
@@ -339,15 +347,15 @@ return /******/ (function(modules) { // webpackBootstrap
 	process.umask = function() { return 0; };
 
 
-/***/ },
+/***/ }),
 /* 2 */
-/***/ function(module, exports) {
+/***/ (function(module, exports) {
 
 	module.exports = __WEBPACK_EXTERNAL_MODULE_2__;
 
-/***/ },
+/***/ }),
 /* 3 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
 	  * $script.js JS loader & dependency manager
@@ -474,7 +482,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	});
 
 
-/***/ }
+/***/ })
 /******/ ])
 });
 ;
