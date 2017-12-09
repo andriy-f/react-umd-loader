@@ -19,7 +19,11 @@ class LoadUmd extends Component {
     window.React = React;
     // async load of remote UMD component
     script(this.props.url, () => {
-      const target = window[this.props.name];
+      var target = window[this.props.name];
+      if(target.__esModule) {
+        target = target.default;
+      }
+
       if (target) {
         // loaded OK
         this.setState({
