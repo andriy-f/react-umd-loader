@@ -68,11 +68,12 @@
     "mocha": "^3.0.2",
     "phantomjs-polyfill": "0.0.2",
     "phantomjs-prebuilt": "^2.1.12",
+    "prop-types": "^15.6.0",
     "purecss": "^0.6.0",
     "raw-loader": "^0.5.1",
-    "react": "^15.3.0",
+    "react": "^16.2.0",
     "react-addons-test-utils": "^15.3.0",
-    "react-dom": "^15.3.0",
+    "react-dom": "^16.2.0",
     "react-github-corner": "^0.3.0",
     "rimraf": "^2.5.4",
     "style-loader": "^0.13.1",
@@ -84,7 +85,7 @@
     "webpack-merge": "^0.14.1"
   },
   "peerDependencies": {
-    "react": ">= 0.11.2 < 16.0.0"
+    "react": "^16.0.0"
   },
   "repository": {
     "type": "git",

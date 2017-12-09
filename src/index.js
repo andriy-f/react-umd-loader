@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import script from 'scriptjs';
 
 
@@ -10,9 +11,9 @@ class LoadUmd extends Component {
     error: null
   }
   static propTypes = {
-    url: React.PropTypes.string.isRequired,
-    name: React.PropTypes.string.isRequired,
-    props: React.PropTypes.object
+    url: PropTypes.string.isRequired,
+    name: PropTypes.string.isRequired,
+    props: PropTypes.object
   }
   componentDidMount() {
     // expose React for UMD build
