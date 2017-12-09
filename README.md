@@ -22,7 +22,7 @@ You can use [unpkg.com](unpkg.com) or whatever hosting. The only requirement is 
 This example loads the remote `react-json-viewer` component into our app
 
 ```js
-import UmdLoader from 'react-umd-loader'
+import UmdLoader from 'react-umd-loader-uni'
 
 let cmp = (<UmdLoader url="https://npmcdn.com/react-json-viewer@1.0.9" name="ReactJSONViewer" props={ props }>
              <p>Loading remote component...</p>
