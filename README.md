@@ -4,7 +4,8 @@
 
 ## Fork info
 
-This is fork of [react-umd-loader](https://github.com/revolunet/react-umd-loader) which can also load ES6 React modules in UMD format
+This is fork of [react-umd-loader](https://github.com/revolunet/react-umd-loader) which can also load ES6 React modules in UMD format.
+This version supports React from 0.11.2 to 15 inclusive.
 
 ## Original readme
 
