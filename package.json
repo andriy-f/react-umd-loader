@@ -8,7 +8,7 @@
     }
   ],
   "user": "revolunet",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "scripts": {
     "start": "webpack-dev-server",
     "test": "karma start --",
