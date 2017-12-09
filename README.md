@@ -1,6 +1,12 @@
-# react-umd-loader [![experimental](http://badges.github.io/stability-badges/dist/experimental.svg)](http://github.com/badges/stability-badges)
+# react-umd-loader-uni [![experimental](http://badges.github.io/stability-badges/dist/experimental.svg)](http://github.com/badges/stability-badges)
 
-[![npm version](https://img.shields.io/npm/v/react-umd-loader.svg)](http://npmjs.org/react-umd-loader)
+[![npm version](https://img.shields.io/npm/v/react-umd-loader-uni.svg)](http://npmjs.org/react-umd-loader-uni)
+
+## Fork info
+
+This is fork of [react-umd-loader](https://github.com/revolunet/react-umd-loader) which can also load ES6 React modules in UMD format
+
+## Original readme
 
 Async load any remote [UMD](https://github.com/umdjs/umd) compatible React component into your app.
 
